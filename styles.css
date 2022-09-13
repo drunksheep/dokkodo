@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body,
+html {
+    background-color: dimgray;
+    overflow-x: hidden;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+.block {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main {
+    border: 2px solid white;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5vh 30px;
+    max-width: 95vw;
+    max-height: 95vh;
+    overflow-y: scroll;
+}
+
+.main-logo {
+    border-radius: 5px;
+    border: 2px solid #e1e1e1;
+    padding: 5px;
+}
+
+input {
+    border-radius: 10px;
+    min-height: 42px;
+    min-width: 400px;
+    border: 0;
+    padding: 10px 5px;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form button {
+    min-height: 42px;
+    border: 2px solid transparent;
+    min-width: 180px;
+    border-radius: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.image-listing {
+    width: 100%;
+    padding: 30px 20px;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.image-listing li {
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.image-listing li p {
+    color: #FFF;
+}
+
+.image-listing li+li {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #FFF;
+}
+
+.dl-btn {
+    height: 40px;
+    width: 180px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    transition: all .35s ease;
+}
+
+.dl-btn:hover {
+    background: #FFF;
+    color: dimgray;
+}
+
+
+.ajax-overlay {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 105, 105, .9);
+    display: none;
+}
+
+
+@keyframes ldio {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.ldio div {
+    position: absolute;
+    animation: ldio 1s linear infinite;
+    width: 185.6px;
+    height: 185.6px;
+    top: 21%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 3.7119999999999997px 0 0 #ffffff;
+    transform-origin: 92.8px 94.65599999999999px;
+    transform: translateY(10px);
+}
+
+.loadingio-spinner-eclipse {
+    width: 304px;
+    height: 304px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    right: 0;
+    margin: auto;
+}
+
+.ldio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+
+.ldio div {
+    box-sizing: content-box;
+}
+
+
+h1 {
+    font-size: 32px;
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+}
+
+blockquote {
+    font-size: 1.4em;
+    max-width: 350px;
+    margin: 50px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #880808;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #880808;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote::after {
+    content: '';
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}

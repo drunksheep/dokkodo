@@ -1,0 +1,15 @@
+{
+    "name": "Dokkodo",
+    "version": "0.0.1",
+    "description": "Ferramenta que retorna todas imagens de uma URL",
+    "author": "André Facchini",
+    "person": {
+        "name": "André Facchini",
+        "email": "andre3facchini@gmail.com",
+        "url": "https://github.com/drunksheep/"
+    },
+    "license" : "ISC License",
+    "homepage": "https://dok.io/",
+    "dependencies": {},
+    "devDependencies": {}
+}
