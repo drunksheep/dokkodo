@@ -1,21 +1,27 @@
-export default function headlessDOMHandling () {
-    // let input = document.querySelector('input');
-    let imgs = document.querySelectorAll('img');
-    let bgs = document.querySelectorAll('[style*="background-image');
+export default function headlessDOMHandling (doc : unknown) {
+
+    // @ts-ignore
+    let imgs = doc.querySelectorAll('img');
+    // @ts-ignore
+    let bgs = doc.querySelectorAll('[style*="background-image');
     
     let elems = new Set([
         ...imgs,
         ...bgs
     ]) 
 
+    let results : Array<string> = []; 
+
     elems.forEach( ( el : HTMLImageElement | HTMLDivElement | any ) => {
         if (el.nodeName == "IMG") {
-            console.log(el.src)
+            results.push(el.src)
         } else {
+            // @ts-ignore
             let style = el.currentStyle || window.getComputedStyle(el, false);
-            console.log(style.backgroundImage.slice(4, -1).replace(/"/g, ""));
+
+            results.push(style.backgroundImage.slice(4, -1).replace(/"/g, ""))
         }
     })
 
-    return elems;
+    return results;
 }

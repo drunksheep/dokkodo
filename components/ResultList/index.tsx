@@ -1,12 +1,13 @@
 import styles from './style.module.scss';
 
+type imageItem = {
+    url: string;
+}
 
-// type ResultListProps = {
-    
-// }
+type imageList = imageItem[];
 
-export default function ResultList(props: Array<any> = []) {
+export default function ResultList(props: imageList = []) {
     return (
-        <ul className={styles.imageListing}></ul>
+        <ul className={styles.imageListing} />
     )
 }
