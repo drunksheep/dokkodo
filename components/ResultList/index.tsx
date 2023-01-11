@@ -1,7 +1,11 @@
 import styles from './style.module.scss';
 
 
-export default function ResultList() {
+// type ResultListProps = {
+    
+// }
+
+export default function ResultList(props: Array<any> = []) {
     return (
         <ul className={styles.imageListing}></ul>
     )
